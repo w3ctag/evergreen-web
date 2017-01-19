@@ -1,6 +1,24 @@
+The Evergreen Web
+
+W3C TAG Draft Finding
+
+[ Who is audience: a finding for those who re-use web platform engines in specific industries and make derivative works - e.g. televisions and other devices AND also dedicated browsers. ]
+
+Abstract 
+
+1.  The Web needs to be continually updated to work.  When this happens:
+   Security risks are addressed continually
+   The web platform (and its features) can continually evolve
+   UAs will continue to support the (also evolving) sites and resources on the web.
+2.  People take subsets of the web’s standards for use in specific situations/hardware.  Many of these UAs aren’t updated after installation. 
+3.  Therefore, we have subsets of the web running that aren’t updated.  We’ve seen this go wrong. 
+
+To be an active part of the web, any subset of the web platform or standards must allow for continuous updating.
+
+
 Intro
 
-The world wide web is a system and is also a platform of technologies which are used to support this system.
+The world wide web is both a system and a platform of technologies which are used to support this system.
 
 The web is an unowned ecosystem (part of the commons - https://en.wikipedia.org/wiki/Commons). Multiple interoperable implementations from (often) competing vendors allow developers to build portable applications and content at a scale unique in the history of computing.
 
@@ -10,8 +28,8 @@ Constant Evolution is the Web's Natural State
 
 Web technology and the software that implements it is constantly evolving in order to make development of Web content and applications easier by solving existing problems that have costs to developers and users, to make the capabilities of new hardware and new operating systems and capabilities present in other platforms available to applications on the Web and thus allow users to use those capabilities and benefit from the Web's security model at the same time, and to address newly-discovered threats to the security and privacy of users present both in Web technology and in specific implementations.
 
-In the history of the web there have been numerous examples of static implementations delaying the ability for users and developers to benefit from improvements to the Web
-(for example, IE6, Netscape 4). Pre-smartphone era mobile web browsers were also installed into devices and not field-upgradable, which created friction in the evolution of the use of the web on mobile devies. 
+In the history of the web there have been numerous examples of static implementations preventing users and developers to benefit from improvements to the Web
+(for example, IE6, Netscape 4). Pre-smartphone era mobile web browsers were also installed into devices and not field-upgradable, which created friction in the evolution of the use of the web on mobile devices. 
 This problem can be especially acute when there is a large installed base.
 
 These improvements to the Web happen in many different fora inside and outside of W3C and other standards 
