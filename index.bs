@@ -15,7 +15,7 @@ Abstract: see boilerplate="abstract" below which makes this line ignored
 </pre>
 
 <div boilerplate="status">
-<h2 id="status" class="no-num no-toc">Status of this document</h2>
+<h2 id="status" class="no-num no-toc no-ref">Status of this document</h2>
 [STATUSTEXT]
 </div>
 
