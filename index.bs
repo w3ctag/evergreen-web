@@ -1,22 +1,39 @@
-The Evergreen Web
+<h1>The Evergreen Web</h1>
+<pre class="metadata">
+Group: tag
+Shortname: evergreen-web
+ED: https://w3ctag.github.io/evergreen-web/
+Repository: https://github.com/w3ctag/evergreen-web/
+Status: DRAFT-FINDING
+Editor: Daniel Appelquist
+Editor: L. David Baron, Mozilla https://www.mozilla.org/, https://dbaron.org/
+Editor: Hadley Beeman
+<!-- Group doesn't currently generate correct license info, so use copyright no, temporarily -->
+Boilerplate: conformance no, copyright no
+Status Text: This is currently an early draft.
+Abstract: see boilerplate="abstract" below which makes this line ignored
+</pre>
 
-W3C TAG Draft Finding
+<div boilerplate="status">
+<h2 id="status" class="no-num no-toc">Status of this document</h2>
+[STATUSTEXT]
+</div>
 
 [ Who is audience: a finding for those who re-use web platform engines in specific industries and make derivative works - e.g. televisions and other devices AND also dedicated browsers. ]
 
-Abstract 
-
+<div boilerplate="abstract">
 1.  The Web needs to be continually updated to work.  When this happens:
-   Security risks are addressed continually
-   The web platform (and its features) can continually evolve
-   UAs will continue to support the (also evolving) sites and resources on the web.
+    * Security risks are addressed continually
+    * The web platform (and its features) can continually evolve
+    * UAs will continue to support the (also evolving) sites and resources on the web.
 2.  People take subsets of the web’s standards for use in specific situations/hardware.  Many of these UAs aren’t updated after installation. 
 3.  Therefore, we have subsets of the web running that aren’t updated.  We’ve seen this go wrong. 
 
 To be an active part of the web, any subset of the web platform or standards must allow for continuous updating.
+</div>
 
-
-Intro
+Introduction {#intro}
+============
 
 The world wide web is both a system and a platform of technologies which are used to support this system.
 
@@ -24,7 +41,8 @@ The web is an unowned ecosystem (part of the commons - https://en.wikipedia.org/
 
 Vendors who distribute implementations of the web platform participate in this commons and share responsibility for its health -- regardless of their involvement in the standards development process. The web has suffered periods of vendor neglect and slow update rates, impairing progress for users and developers. Today, software updates and competition provide the backbone of a dynamic web ecosystem and are essential to a healthy web.
 
-Constant Evolution is the Web's Natural State
+Constant Evolution is the Web's Natural State {#evolution}
+=============================================
 
 Web technology and the software that implements it is constantly evolving in order to make development of Web content and applications easier by solving existing problems that have costs to developers and users, to make the capabilities of new hardware and new operating systems and capabilities present in other platforms available to applications on the Web and thus allow users to use those capabilities and benefit from the Web's security model at the same time, and to address newly-discovered threats to the security and privacy of users present both in Web technology and in specific implementations.
 
@@ -38,7 +56,8 @@ multiple development efforts.
 
 End-of-Life devices - one strategy is to allow competition of web engines.
 
-Regular Updates of User Agents are Vital to the Web's Continued Health
+Regular Updates of User Agents are Vital to the Web's Continued Health {#updates}
+======================================================================
 
 The modern web platform requires regular and systematic updates. Any system which 
 implements even a subset of the web's technology stack must therefore have a secure update process in 
@@ -48,7 +67,8 @@ as home electronics, kiosks, bill-boards, and the like. Because of the complexit
 web-derived systems that do not implement an auto-update capabilty pose a serious risk to users. These risks are
 often borne by other users, not only the users of the out-of-date implementations.
 
-Subsetting of the Web
+Subsetting of the Web {#subsetting}
+=====================
 
 All implementations of the web platform are subsets to one degree or another.  Subsetting by listing features to implement is inherently brittle.  If a defined subset is required, it should be defined in terms of features to exclude.
 
