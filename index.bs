@@ -12,6 +12,7 @@ Editor: Hadley Beeman
 Boilerplate: conformance no, copyright no
 Status Text: This is currently an early draft.
 Abstract: see boilerplate="abstract" below which makes this line ignored
+Markup Shorthands: markdown on
 </pre>
 
 <div boilerplate="status">
@@ -37,7 +38,7 @@ Introduction {#intro}
 
 The world wide web is both a system and a platform of technologies which are used to support this system.
 
-The web is an unowned ecosystem (part of the commons - https://en.wikipedia.org/wiki/Commons). Multiple interoperable implementations from (often) competing vendors allow developers to build portable applications and content at a scale unique in the history of computing.
+The web is an unowned ecosystem (part of the [commons](https://en.wikipedia.org/wiki/Commons)). Multiple interoperable implementations from (often) competing vendors allow developers to build portable applications and content at a scale unique in the history of computing.
 
 Vendors who distribute implementations of the web platform participate in this commons and share responsibility for its health -- regardless of their involvement in the standards development process. The web has suffered periods of vendor neglect and slow update rates, impairing progress for users and developers. Today, software updates and competition provide the backbone of a dynamic web ecosystem and are essential to a healthy web.
 
