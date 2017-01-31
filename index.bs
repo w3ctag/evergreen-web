@@ -36,42 +36,80 @@ To be an active part of the web, any subset of the web platform or standards mus
 Introduction {#intro}
 ============
 
-The world wide web is both a system and a platform of technologies which are used to support this system.
+The world wide web is both a system and a platform of technologies which are used to support this system. It includes client and server software, and the technologies that are implemented by that software.
 
-The web is an unowned ecosystem (part of the [commons](https://en.wikipedia.org/wiki/Commons)). Multiple interoperable implementations from (often) competing vendors allow developers to build portable applications and content at a scale unique in the history of computing.
+This ecosystem does not have a single owner; it is a a [commons](https://en.wikipedia.org/wiki/Commons). Web clients and servers have multiple interoperable implementations of the Web's technologies, produced by competing vendors. The web ecosystem allows developers to build portable applications and content at a scale unique in the history of computing.
 
-Vendors who distribute implementations of the web platform participate in this commons and share responsibility for its health -- regardless of their involvement in the standards development process. The web has suffered periods of vendor neglect and slow update rates, impairing progress for users and developers. Today, software updates and competition provide the backbone of a dynamic web ecosystem and are essential to a healthy web.
+Vendors who distribute implementations of the web platform participate in this commons and share responsibility for its health &mdash; regardless of their involvement in the standards development process. The web has suffered periods of vendor neglect and slow update rates, impairing progress for users and developers. Today, software updates and competition provide the backbone of a dynamic web ecosystem and are essential to a healthy web.
 
 Constant Evolution is the Web's Natural State {#evolution}
 =============================================
 
-Web technology and the software that implements it is constantly evolving in order to make development of Web content and applications easier by solving existing problems that have costs to developers and users, to make the capabilities of new hardware and new operating systems and capabilities present in other platforms available to applications on the Web and thus allow users to use those capabilities and benefit from the Web's security model at the same time, and to address newly-discovered threats to the security and privacy of users present both in Web technology and in specific implementations.
+Web technology and the software that implements it is constantly evolving.
+This evolution makes development of Web content and applications easier
+by solving existing problems that have costs to developers and users.
+This evolution also brings the capabilities
+of new hardware and new operating systems
+and capabilities present in other platforms
+to applications on the Web,
+and thus allows users to use those capabilities
+and benefit from the Web's security model at the same time.
+Finally, this evolution addresses newly-discovered threats
+to the security and privacy of users
+present both in Web technology and in specific implementations.
 
-In the history of the web there have been numerous examples of static implementations preventing users and developers to benefit from improvements to the Web
-(for example, IE6, Netscape 4). Pre-smartphone era mobile web browsers were also installed into devices and not field-upgradable, which created friction in the evolution of the use of the web on mobile devices. 
-This problem can be especially acute when there is a large installed base.
+The web's history has many examples
+of static implementations
+preventing users and developers from benefiting
+from improvements to the Web (for example, IE6, Netscape 4).
+Pre-smartphone era mobile web browsers were also installed into devices and not field-upgradable, which created friction in the evolution of the use of the web on mobile devices.
+When the out-of-date implementations are a significant part of the total,
+the problems are especially bad
+because the implementations affect the technology developers are willing to use,
+and thus affect the users of all other implementations.
 
-These improvements to the Web happen in many different fora inside and outside of W3C and other standards 
-development organizations with different processes such as the IETF, ECMA and WHATWG, and in coordination with 
-multiple development efforts.
+These improvements to the Web happen in many places,
+from standards development organizations
+(such as W3C, IETF, ECMA, and WHATWG)
+to multiple software projects.
 
-End-of-Life devices - one strategy is to allow competition of web engines.
+[ End-of-Life devices - one strategy is to allow competition of web engines. ]
 
 Regular Updates of User Agents are Vital to the Web's Continued Health {#updates}
 ======================================================================
 
-The modern web platform requires regular and systematic updates. Any system which 
-implements even a subset of the web's technology stack must therefore have a secure update process in 
-order to manage and maintain these regular updates, remaining "ever green." This includes browsers on desktop, 
-laptop and mobile computing devices and also browsers or browser-derived technology in embedded devices such 
-as home electronics, kiosks, bill-boards, and the like. Because of the complexity and power of the modern web, 
-web-derived systems that do not implement an auto-update capabilty pose a serious risk to users. These risks are
-often borne by other users, not only the users of the out-of-date implementations.
+The modern web platform requires regular and systematic updates.
+Any system which implements even a subset of the web's technology stack
+must therefore have a secure update process
+in order to manage and maintain these regular updates,
+remaining &ldquo;ever green.&rdquo;
+This includes browsers on desktop, laptop and mobile computing devices
+and also browsers or browser-derived technology in embedded devices
+such as home electronics, kiosks, or billboards.
+Because of the complexity and power of the modern web,
+web-derived systems that do not implement an auto-update capability
+pose a serious risk to users.
+These risks are often borne by other users,
+not only the users of the out-of-date implementations.
 
 Subsetting of the Web {#subsetting}
 =====================
 
-All implementations of the web platform are subsets to one degree or another.  Subsetting by listing features to implement is inherently brittle.  If a defined subset is required, it should be defined in terms of features to exclude.
+Since different implementations of Web technology
+contain different sets of features,
+all implementations of the web platform are subsets to some degree.
+However, since the set of technology that makes up the Web
+is constantly evolving,
+subsetting by listing features to implement is inherently brittle.
+If a defined subset of the Web is required,
+it should be defined in terms of features to exclude.
 
-When people do subset the platform they should do it in a way that matches how missing features behave in that part of the platform (for example missing DOM APIs do not exist on the relevant objects, or unimplemented values of CSS properties are not accepted by the CSS parser and do not override previous values).
-This allows web applications to use feature detection in the normal ways and use progressive enhancement approaches.
+When people do subset the platform they should do it
+in a way that matches how missing features behave in that part of the platform.
+For example, missing DOM APIs do not exist on the relevant objects,
+or unimplemented values of CSS properties are not accepted by the CSS parser
+and do not override previous values.
+This allows web applications to use feature detection in the normal ways
+and use progressive enhancement approaches,
+the same techniques that applied as the features were progressively added
+to the Web platform.
