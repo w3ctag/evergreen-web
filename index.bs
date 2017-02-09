@@ -35,7 +35,7 @@ Some products support only a limited subset of the web platform. Vendors create 
 
 Web developers have a natural instinct to build content for the broadest possible audience. These subsetted browsers may require them to build separate content. They may also delay adoption of newer features across the web.
 
-Subsets and legacy browsers can drag the lowest common denominator down, preventing the spread of platform-wide progress. This risk is magnified by use; more instances of subsetted browsers lead to a more heterogenous web. Runtimes which are not general-purpose browsers or do not see much use pose less risk.
+Subsets and legacy browsers can drag the lowest common denominator down, preventing the spread of platform-wide progress. This risk is magnified by use; more instances of subsetted browsers lead to a more heterogeneous web. Runtimes which are not general-purpose browsers or do not see much use pose less risk.
 
 Browsers are part of the web and must be continually updated {#updates}
 ============================================================
