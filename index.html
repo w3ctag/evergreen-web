@@ -1,7 +1,7 @@
 <!doctype html><html lang="en">
  <head>
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-  <title>The Evergreen Web</title>
+  <title>The evergreen web</title>
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
 <style data-fill-with="stylesheet">/******************************************************************************
  *                   Style sheet for the W3C specifications                   *
@@ -418,7 +418,7 @@
 	[data-algorithm]:not(.heading) {
 	  padding: .5em;
 	  border: thin solid #ddd; border-radius: .5em;
-	  margin: .5em 0;
+	  margin: .5em calc(-0.5em - 1px);
 	}
 	[data-algorithm]:not(.heading) > :first-child {
 	  margin-top: 0;
@@ -1176,7 +1176,7 @@ Possible extra rowspan handling
 		}
 	}
 </style>
-  <meta content="Bikeshed version 009836c46217067220542eccc715a300175723d6" name="generator">
+  <meta content="Bikeshed version 7d5b85d5220bc9cd2c3f6f91ad51efdd41a94cd6" name="generator">
 <style>/* style-md-lists */
 
             /* This is a weird hack for me not yet following the commonmark spec
@@ -1327,17 +1327,15 @@ Possible extra rowspan handling
  <body class="h-entry">
   <div class="head">
    <p data-fill-with="logo"></p>
-   <h1>The Evergreen Web</h1>
-   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Draft Finding, <time class="dt-updated" datetime="2017-01-31">31 January 2017</time></span></h2>
+   <h1>The evergreen web</h1>
+   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Draft Finding, <time class="dt-updated" datetime="2017-02-09">9 February 2017</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
      <dt>This version:
      <dd><a class="u-url" href="https://w3ctag.github.io/evergreen-web/">https://w3ctag.github.io/evergreen-web/</a>
      <dt>Issue Tracking:
      <dd><a href="https://github.com/w3ctag/evergreen-web/issues/">GitHub</a>
-     <dt class="editor">Editors:
-     <dd class="editor p-author h-card vcard"><span class="p-name fn">Daniel Appelquist</span>
-     <dd class="editor p-author h-card vcard"><a class="p-name fn u-url url" href="https://dbaron.org/">L. David Baron</a> (<a class="p-org org" href="https://www.mozilla.org/">Mozilla</a>)
+     <dt class="editor">Editor:
      <dd class="editor p-author h-card vcard"><span class="p-name fn">Hadley Beeman</span>
     </dl>
    </div>
@@ -1346,103 +1344,46 @@ Possible extra rowspan handling
   </div>
   <h2 class="no-num no-toc no-ref heading settled" id="abstract"><span class="content">Abstract</span></h2>
   <div class="p-summary" data-fill-with="abstract">
-   <ol>
-    <li data-md="">
-     <p>The Web needs to be continually updated to work.  When this happens:</p>
-     <ul>
-      <li data-md="">
-       <p>Security risks are addressed continually</p>
-      <li data-md="">
-       <p>The web platform (and its features) can continually evolve</p>
-      <li data-md="">
-       <p>UAs will continue to support the (also evolving) sites and resources on the web.</p>
-     </ul>
-    <li data-md="">
-     <p>People take subsets of the web’s standards for use in specific situations/hardware.  Many of these UAs aren’t updated after installation.</p>
-    <li data-md="">
-     <p>Therefore, we have subsets of the web running that aren’t updated.  We’ve seen this go wrong.</p>
-   </ol>
-   <p>To be an active part of the web, any subset of the web platform or standards must allow for continuous updating.</p>
+   <p>Constant evolution is fundamental to the Web’s usefulness. Browsers that do not stay up-to-date place stress on the ecosystem. These products potentially fork the web, isolating their users and developers from the rest of the world.</p>
+   <p>Browsers are a part of the web and therefore they must be continually updated.  Vendors that ship browsers hold the power to keep the web moving forwards as a platform, or to hold it back.</p>
   </div>
   <div data-fill-with="at-risk"></div>
   <nav data-fill-with="table-of-contents" id="toc">
    <h2 class="no-num no-toc no-ref" id="contents">Table of Contents</h2>
    <ol class="toc" role="directory">
-    <li><a href="#intro"><span class="secno">1</span> <span class="content">Introduction</span></a>
-    <li><a href="#evolution"><span class="secno">2</span> <span class="content">Constant Evolution is the Web’s Natural State</span></a>
-    <li><a href="#updates"><span class="secno">3</span> <span class="content">Regular Updates of User Agents are Vital to the Web’s Continued Health</span></a>
-    <li><a href="#subsetting"><span class="secno">4</span> <span class="content">Subsetting of the Web</span></a>
+    <li><a href="#evolution"><span class="secno">1</span> <span class="content">Interoperable evolution</span></a>
+    <li><a href="#subsetting"><span class="secno">2</span> <span class="content">Subsetting slows evolution</span></a>
+    <li><a href="#updates"><span class="secno">3</span> <span class="content">Browsers are part of the web and must be continually updated</span></a>
    </ol>
   </nav>
   <main>
-   <div boilerplate="status">
-    <h2 class="no-num no-toc no-ref heading settled" id="status"><span class="content">Status of this document</span></h2>
-    <p>This is currently an early draft.</p>
-   </div>
-   <p>[ Who is audience: a finding for those who re-use web platform engines in specific industries and make derivative works - e.g. televisions and other devices AND also dedicated browsers. ]</p>
-   <h2 class="heading settled" data-level="1" id="intro"><span class="secno">1. </span><span class="content">Introduction</span><a class="self-link" href="#intro"></a></h2>
-   <p>The world wide web is both a system and a platform of technologies which are used to support this system. It includes client and server software, and the technologies that are implemented by that software.</p>
-   <p>This ecosystem does not have a single owner; it is a a <a href="https://en.wikipedia.org/wiki/Commons">commons</a>. Web clients and servers have multiple interoperable implementations of the Web’s technologies, produced by competing vendors. The web ecosystem allows developers to build portable applications and content at a scale unique in the history of computing.</p>
-   <p>Vendors who distribute implementations of the web platform participate in this commons and share responsibility for its health — regardless of their involvement in the standards development process. The web has suffered periods of vendor neglect and slow update rates, impairing progress for users and developers. Today, software updates and competition provide the backbone of a dynamic web ecosystem and are essential to a healthy web.</p>
-   <h2 class="heading settled" data-level="2" id="evolution"><span class="secno">2. </span><span class="content">Constant Evolution is the Web’s Natural State</span><a class="self-link" href="#evolution"></a></h2>
-   <p>Web technology and the software that implements it is constantly evolving.
-This evolution makes development of Web content and applications easier
-by solving existing problems that have costs to developers and users.
-This evolution also brings the capabilities
-of new hardware and new operating systems
-and capabilities present in other platforms
-to applications on the Web,
-and thus allows users to use those capabilities
-and benefit from the Web’s security model at the same time.
-Finally, this evolution addresses newly-discovered threats
-to the security and privacy of users
-present both in Web technology and in specific implementations.</p>
-   <p>The web’s history has many examples
-of static implementations
-preventing users and developers from benefiting
-from improvements to the Web (for example, IE6, Netscape 4).
-Pre-smartphone era mobile web browsers were also installed into devices and not field-upgradable, which created friction in the evolution of the use of the web on mobile devices.
-When the out-of-date implementations are a significant part of the total,
-the problems are especially bad
-because the implementations affect the technology developers are willing to use,
-and thus affect the users of all other implementations.</p>
-   <p>These improvements to the Web happen in many places,
-from standards development organizations
-(such as W3C, IETF, ECMA, and WHATWG)
-to multiple software projects.</p>
-   <p>[ End-of-Life devices - one strategy is to allow competition of web engines. ]</p>
-   <h2 class="heading settled" data-level="3" id="updates"><span class="secno">3. </span><span class="content">Regular Updates of User Agents are Vital to the Web’s Continued Health</span><a class="self-link" href="#updates"></a></h2>
-   <p>The modern web platform requires regular and systematic updates.
-Any system which implements even a subset of the web’s technology stack
-must therefore have a secure update process
-in order to manage and maintain these regular updates,
-remaining “ever green.”
-This includes browsers on desktop, laptop and mobile computing devices
-and also browsers or browser-derived technology in embedded devices
-such as home electronics, kiosks, or billboards.
-Because of the complexity and power of the modern web,
-web-derived systems that do not implement an auto-update capability
-pose a serious risk to users.
-These risks are often borne by other users,
-not only the users of the out-of-date implementations.</p>
-   <h2 class="heading settled" data-level="4" id="subsetting"><span class="secno">4. </span><span class="content">Subsetting of the Web</span><a class="self-link" href="#subsetting"></a></h2>
-   <p>Since different implementations of Web technology
-contain different sets of features,
-all implementations of the web platform are subsets to some degree.
-However, since the set of technology that makes up the Web
-is constantly evolving,
-subsetting by listing features to implement is inherently brittle.
-If a defined subset of the Web is required,
-it should be defined in terms of features to exclude.</p>
-   <p>When people do subset the platform they should do it
-in a way that matches how missing features behave in that part of the platform.
-For example, missing DOM APIs do not exist on the relevant objects,
-or unimplemented values of CSS properties are not accepted by the CSS parser
-and do not override previous values.
-This allows web applications to use feature detection in the normal ways
-and use progressive enhancement approaches,
-the same techniques that applied as the features were progressively added
-to the Web platform.</p>
+   <h2 class="heading settled" data-level="1" id="evolution"><span class="secno">1. </span><span class="content">Interoperable evolution</span><a class="self-link" href="#evolution"></a></h2>
+   <p>The web ecosystem enjoys a high level of interoperability, despite intense competition between browser vendors. Interoperability allows web developers to build experiences that are portable across devices and operating systems at a scale unique in the history of computing. Code written once can render in every browser.</p>
+   <p>Interoperability helps the web progress — innovation propagates between browsers though competition and standards. Browsers that are slow to update can inhibit the web’s evolution. The web has suffered periods of stagnation, impeding progress for users and developers.</p>
+   <p>Today, the web ecosystem is developing rapidly. Rapid, automatic software updates, vendor co-operation, standardization, and competition are essential to a healthy web. They have allowed:</p>
+   <ul>
+    <li data-md="">
+     <p>The addition of new capabilities to the Web platform</p>
+    <li data-md="">
+     <p>Security and privacy risks to be addressed</p>
+    <li data-md="">
+     <p>Developers to build interoperable content</p>
+    <li data-md="">
+     <p>The web to continue evolving as one cohesive platform</p>
+   </ul>
+   <h2 class="heading settled" data-level="2" id="subsetting"><span class="secno">2. </span><span class="content">Subsetting slows evolution</span><a class="self-link" href="#subsetting"></a></h2>
+   <p>Some products support only a limited subset of the web platform. Vendors create these subsetted web runtimes for a number of reasons:</p>
+   <ol>
+    <li data-md="">
+     <p>Intentionally: to simplify their implementation, reduce resource requirements or meet environmental constraints (e.g., some browsers in TVs).</p>
+    <li data-md="">
+     <p>Unintentionally: by shipping a relatively complete implementation but failing to update it as the web evolves (e.g., browsers from the pre-auto-update era or browsers on old operating systems not supported by the current version of the browser).</p>
+   </ol>
+   <p>Web developers have a natural instinct to build content for the broadest possible audience. These subsetted browsers may require them to build separate content. They may also delay adoption of newer features across the web.</p>
+   <p>Subsets and legacy browsers can drag the lowest common denominator down, preventing the spread of platform-wide progress. This risk is magnified by use; more instances of subsetted browsers lead to a more heterogenous web. Runtimes which are not general-purpose browsers or do not see much use pose less risk.</p>
+   <h2 class="heading settled" data-level="3" id="updates"><span class="secno">3. </span><span class="content">Browsers are part of the web and must be continually updated</span><a class="self-link" href="#updates"></a></h2>
+   <p>Vendors must decide whether their products can browse the public web. Products that can load arbitrary content are “browsers”. Browsers must be regularly updated, especially to fix security and interoperability bugs — ideally with an automatic, secure update mechanism.</p>
+   <p>This responsibility does not limit vendors' freedom to use elements of web technologies or browser-derived runtimes to create closed systems (e.g. digital signage platforms or intranet-specific environments) that do not access the public web.</p>
   </main>
 <script>
 (function() {
