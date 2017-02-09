@@ -4,7 +4,7 @@ Group: tag
 Shortname: evergreen-web
 ED: https://w3ctag.github.io/evergreen-web/
 Repository: https://github.com/w3ctag/evergreen-web/
-Status: DRAFT-FINDING
+Status: FINDING
 Editor: Hadley Beeman, https://hadleybeeman.com/
 <!-- Group doesn't currently generate correct license info, so use copyright no, temporarily -->
 Boilerplate: conformance no, copyright no
